@@ -1,0 +1,9 @@
+.container .row .nav-item a{
+	background:none;
+	color:black;
+}
+.container .row .nav-item a:hover{
+	background:#f1b0b7;
+}
+
+
