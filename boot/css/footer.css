@@ -1,0 +1,22 @@
+.bg{
+    background:url(../images/bg_footer.jpg) no-repeat center;
+    background-size:100% 100%;
+}
+.container-fluid .row .col-sm-12{
+    background-color:#177abb;
+}
+.footer_fs{
+    font-size:1.125rem;
+}
+.footer_fs_contact{
+    font-size:0.75rem;
+    color:#92d3fe;
+}
+.footer_fs_contact a{
+    text-decoration:none;
+}
+.footer_fs_copyright{
+    font-size:0.625rem;
+    color:#47aff3;
+    border-top:1px solid #208cd3;
+}
