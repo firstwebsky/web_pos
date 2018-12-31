@@ -5,52 +5,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet" href="../css/header.css"/>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/header.css"/>
   <title></title>
 </head>
 <body>
   <div class="container">
     <!-- 三条杠按钮-->
-
-      <button class="navbar navbar-toggler navbar-expand-sm bg-dark navbar-dark">
+    <div class="navbar navbar-light d-lg-none d-block">
+      <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#content">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <!-- 菜单项-->
+      <div id="content" class="collapse navbar-toggler">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" target="_blank">网站首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index_intro.html" target="_blank">公司简介</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">产品中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">新闻动态</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">技术支持</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">关于我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="row mt-3">
       <!--标志-->
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <a href="#"><img src="../images/logo.png" class="w-100 ml-2"/></a>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+        <a href="#">
+          <img src="../images/logo.png" class=" ml-2 media_width d-flex justify-content-center"/>
+        </a>
       </div>
       <!-- 导航-->
-      <div class="col-lg-8 col-md-12 d-sm-none d-md-block">
-        <ul class="nav pt-4 ml-4">
+      <div class="col-xl-8 col-lg-8 d-sm-none d-lg-block">
+        <ul class="nav pt-4 ml-4 flex-nowrap">
           <li class="nav-item">
-            <a href="#" class="nav-link pt-3 pb-5">网站首页</a>
+            <div class="nav-item_hover">
+              <a href="#" class="nav-link pt-4 pb-5">网站首页</a>
+              <div class="nav_caption"></div>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link pt-3 pb-5">公司简介</a>
+            <div class="nav-item_hover dropdown">
+              <a href="index_intro.html" target="_blank" class="nav-link pt-4 pb-5" data-toggle="dropdown">公司简介</a>
+              <div class="nav_caption"></div>
+              <ul class="dropdown-menu nav_item_ul_mt">
+                <li>
+                  <a href="index_intro.html" target="_blank" class="dropdown-item">公司简介</a>
+                </li>
+                <li>
+                  <a href="index_intro.html" class="dropdown-item">证书</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link pt-3 pb-5">产品中心</a>
+            <div class="nav-item_hover dropdown">
+              <a href="#" class="nav-link pt-4 pb-5" data-toggle="dropdown">产品中心</a>
+              <div class="nav_caption"></div>
+              <div class=" d-inline">
+              <ul class="dropdown-menu nav_item_ul_mt nav_item_ul_ul">
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/1.png" alt=""/>
+                    <p>智能POS机</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/2.png" alt=""/>
+                    <p>M pos</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/3.png" alt=""/>
+                    <p>标签打印机</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/4.png" alt=""/>
+                    <p>扫码盒子</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/5.png" alt=""/>
+                    <p>蓝牙打印机</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/6.png" alt=""/>
+                    <p>此卡读写器</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/7.gif" alt=""/>
+                    <p>感应读卡器</p>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="dropdown-item">
+                    <img src="../images/small_img/8.png" alt=""/>
+                    <p>智能模块</p>
+                  </a>
+                </li>
+              </ul>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link pt-3 pb-5">新闻动态</a>
+            <div class="nav-item_hover dropdown">
+              <a href="#" class="nav-link pt-4 pb-5" data-toggle="dropdown">新闻动态</a>
+              <div class="nav_caption"></div>
+              <ul class="dropdown-menu nav_item_ul_mt">
+                <li>
+                  <a href="#" class="dropdown-item">行业新闻</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">公司新闻</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">展会活动</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link pt-3 pb-5">技术支持</a>
+            <div class="nav-item_hover dropdown">
+              <a href="#" class="nav-link pt-4 pb-5" data-toggle="dropdown">技术支持</a>
+              <div class="nav_caption"></div>
+              <ul class="dropdown-menu nav_item_ul_mt">
+                <li>
+                  <a href="#" class="dropdown-item">CDK包</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">测试工具</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">规格书下载</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">技术问题</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link pt-3 pb-5">联系我们</a>
+            <div class="nav-item_hover dropdown">
+              <a href="#" class="nav-link pt-4 pb-5" data-toggle="dropdown">联系我们</a>
+              <div class="nav_caption"></div>
+              <ul class="dropdown-menu nav_item_ul_mt">
+                <li>
+                  <a href="#" class="dropdown-item">联系方式</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">招聘</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <!-- 中英文-->
           <li class="nav-item">
-            <a href="#" class="nav-link"><img src="../images/icon_cn.png" alt=""/></a>
+            <a href="#" class="nav-link">
+              <img src="../images/icon_cn.png" alt=""/>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"><img src="../images/icon_en.png" alt=""/></a>
+            <a href="#" class="nav-link">
+              <img src="../images/icon_en.png" alt="">
+            </a>
           </li>
         </ul>
       </div>

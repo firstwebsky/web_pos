@@ -1,0 +1,169 @@
+/*轮播*/
+div.container-fluid{
+    padding-left:0;
+    padding-right:0;
+}
+                /*左右*/
+.container-fluid a.carousel-control-prev,a.carousel-control-next{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:50%;
+    background-color:#666;
+}
+.container-fluid a.carousel-control-prev{
+    top:50%;
+    left:5%;
+}
+.container-fluid a.carousel-control-next{
+    top:50%;
+    right:5%;
+}
+                /*下标*/
+.container-fluid .carousel-indicators li{
+    width:1.25rem;
+    height:1.25rem;
+    margin:0 0.625rem;
+    border-radius:50%;
+}
+/*公司简介*/
+.font_size{
+    background:url(../images/bg_title.png) no-repeat center;
+    font-size:3rem;
+    font-weight: bold;
+}
+.container-fluid dl.intro{
+    text-align: center;
+}
+/*简介图片*/
+.container-fluid .row .bg_img{
+    background: #f2f2f2;
+}
+
+/*产品简介*/
+.text_d1{
+    font-size:0.875rem;
+    color:#b7b7b7;
+}
+.text_d2{
+    font-size:1.125rem;
+    color:#666;
+}
+.container-fluid a dl{
+    background: #f2f2f2;
+}
+.container-fluid a dl dd.img-about img{
+    float:left;
+}
+.text_style_dt{
+    color:#000;
+    font-size:2.25rem;
+    font-weight: bold;
+    text-decoration:none !important;
+}
+.text_style_dd_caption{
+    text-decoration: none !important;
+    font-size:1.875rem;
+    color:#000;
+}
+.text_style_dd_intro{
+    font-size:1.125rem;
+    color:#666;
+    line-height:2.5em;
+}
+/*产品背景颜色*/
+.name_product .row:nth-child(2){
+    background-image:url(../images/bg_index_pro2.jpg);
+}
+.container-fluid .row:nth-child(4){
+    background-image: url(../images/bg_index_pro4.jpg);
+}
+.name_product_text_width{
+    max-width:24rem !important;
+}
+.name_product_img_width{
+    max-width:25rem !important;
+}
+/*应用领域*/
+      /*背景图片及旋转*/
+.container-fluid .img_use{
+    background:url(../images/bg_yyly.jpg) no-repeat;
+    width:100%;
+
+}
+.container-fluid .img_use img{
+    transition:0.9s linear;
+    transform-origin:50% 0;
+}
+.container-fluid .img_use img:hover{
+    transform:rotateY(360deg);
+}
+.container-fluid .container div img{
+    max-width: 100%;
+    min-width: 75%;
+    flex-wrap: wrap;
+}
+/*新闻资讯*/
+       /*按钮*/
+.news_text{
+    color:#999 !important;
+
+}
+       /*具体内容*/
+.news_time_piece{
+    width: 4.5rem;
+    height:4.5rem;
+    background:#177abb;
+}
+.news_time_piece span{
+    font-size:1.5rem;
+    color:#fff;
+}
+.news_time_piece p{
+    color:#78caff;
+}
+.container .news_font_title{
+    font-size:1rem;
+    color:#000000;
+    text-decoration:none;
+}
+.news_font_content{
+    font-size:0.8rem;
+    color: #878787;
+}
+.tab-content_img_width{
+    max-width:33rem;
+}
+.container .tab-content .border_button_line{
+    border-bottom: 1px solid #e5e5e5;
+}
+/*底部MORE*/
+.more_a_text_size a{
+    padding: 1rem 12rem;
+    height:3rem;
+    /*line-height: 3rem;*/
+    border:1px solid #e5e5e5;
+    border-radius: 0.3rem;
+    text-decoration: none !important;
+    color:#5f7ac1;
+    font-weight: bold;
+    display:block;
+}
+.more_a_text_size{
+    margin:0 auto;
+}
+.container .row .more_a_text_size a:hover{
+    background:#177abb;
+    color:#fff;
+}
+/*引入首尾调整*/
+header iframe,footer iframe{
+    width:100%;
+}
+footer iframe{
+    height:20rem;
+}
+@media screen and (max-width:1200px){
+    .container .tab-content #new_news>div,#new_message>div,#new_activity>div{
+        justify-content: center;
+    }
+}
