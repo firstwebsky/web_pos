@@ -2,10 +2,10 @@
     background:url(../images/bg_footer.jpg) no-repeat center;
     background-size:100% 100%;
 }
-.container-fluid .row .col-sm-12{
+.container-fluid .row .bg_color{
     background-color:#177abb;
 }
-.footer_fs{
+ .footer_fs{
     font-size:1.125rem;
 }
 .footer_fs_contact{

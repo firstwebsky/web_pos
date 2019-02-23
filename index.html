@@ -1,37 +1,35 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <link rel="stylesheet" href="../css/index.css"/>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/index.css"/>
   <link rel="stylesheet" href="../css/bootstrap.css"/>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/header.css"/>
+  <link rel="stylesheet" href="../css/footer.css"/>
   <title></title>
-  <style>
-
-  </style>
 </head>
 <body>
-<header>
-  <iframe src="header.html" scrolling="no" frameborder="0"></iframe>
-</header>
+  <!--头部引入-->
+  <header id="header"></header>
   <div class="container-fluid">
     <!-- 轮播图-->
-    <div id="mycar" class="carousel"  data-ride="carousel">
+    <div id="mycar" class="carousel"  data-ride="carousel" data-interval="2000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../images/index_1.jpg" alt="" class="w-100"/>
+          <img src="../images/index_1.jpg" alt="这是图片" class="w-100"/>
         </div>
         <div class="carousel-item">
-          <img src="../images/index_2.jpg" alt="" class="w-100"/>
+          <img src="../images/index_2.jpg" alt="这是图片" class="w-100"/>
         </div>
       </div>
       <!-- 下面的选项-->
       <ul class="carousel-indicators">
         <li class="active" data-slide-to="0" data-target="#mycar"></li>
-        <li data-slide-to="1" data-target="#mycar" style=""></li>
+        <li data-slide-to="1" data-target="#mycar"></li>
       </ul>
       <!-- 左右的选项-->
       <a href="#mycar" class="carousel-control-prev" data-slide-to="prev">
@@ -52,7 +50,7 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 bg_img">
         <a href="#">
-          <p class="text-center"><img src="../images/logo_index.jpg" alt=""></p>
+          <p class="text-center"><img src="../images/logo_index.jpg" alt="这是图片"></p>
           <div class="text-center">
             <img src="../images/about_1.jpg" alt="">
             <img src="../images/about_2.jpg" alt="">
@@ -155,7 +153,7 @@
       </div>
     </div>
   </div>
-    <!-- 应用领域-->
+  <!-- 应用领域-->
   <div class="container-fluid">
     <div class="img_use">
       <div class="text-center">
@@ -182,7 +180,7 @@
       </div>
     </div>
   </div>
-    <!-- 新闻资讯-->
+  <!-- 新闻资讯-->
   <div class="container">
     <div>
       <p class="font_size text-center">新闻资讯</p>
@@ -207,12 +205,12 @@
         <!-- 公司新闻-->
         <div id="new_news" class="tab-pane active mt-5">
           <div class="row">
-            <div>
-              <a class="col-lg-6 col-md-6 col-sm-12" href="#">
-                <img src="../images/1530675451.jpg" alt="" class="tab-content_img_width mb-5"/>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <a href="#">
+                <img src="../images/1530675451.jpg" alt="图片" class="tab-content_img_width mb-5"/>
               </a>
             </div>
-            <ul class="col-lg-6 col-md-6 col-sm-12 list-unstyled">
+            <ul id="a2" class="col-lg-6 col-md-12 col-sm-12 list-unstyled">
               <!--第一行-->
               <li>
                 <div class="row mt-1 border_button_line">
@@ -271,12 +269,12 @@
         <!-- 行业资讯-->
         <div id="new_message" class="tab-pane mt-5">
           <div class="row">
-            <div>
-              <a class="col-lg-6 col-md-6 col-sm-12" href="#">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <a href="#">
                 <img src="../images/1521802227.jpg" alt="" class="tab-content_img_width mb-5"/>
               </a>
             </div>
-            <ul class="col-lg-6 col-md-6 col-sm-12 list-unstyled">
+            <ul class="col-lg-6 col-md-12 col-sm-12 list-unstyled">
               <!--第一行-->
               <li>
                 <div class="row mt-1 border_button_line">
@@ -335,12 +333,12 @@
         <!-- 展会活动-->
         <div id="new_activity" class="tab-pane mt-5">
           <div class="row">
-            <div>
-              <a class="col-lg-6 col-md-6 col-sm-12" href="#">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <a href="#">
                 <img src="../images/1497864114.jpg" alt="" class="tab-content_img_width mb-5"/>
               </a>
             </div>
-            <ul class="col-lg-6 col-md-6 col-sm-12 list-unstyled">
+            <ul class="col-lg-6 col-md-12 col-sm-12 list-unstyled">
               <!--第一行-->
               <li>
                 <div class="row mt-1 border_button_line">
@@ -382,9 +380,29 @@
       </div>
     </div>
   </div>
-<footer>
-  <iframe src="footer.html" scrolling="no" frameborder="0"></iframe>
-</footer>
-
+  <!--尾部引入-->
+  <footer id="footer"></footer>
+  <script>
+    $(function(){
+      $.ajax({
+        url:"header.html",
+        type:"get",
+      })
+      .then(res=>{
+        document.getElementById("header").innerHTML=res;
+      })
+    })
+  </script>
+  <script>
+    $(function(){
+      $.ajax({
+        url:"footer.html",
+        type:"get",
+      })
+      .then(res=>{
+        document.getElementById("footer").innerHTML=res;
+      })
+    })
+  </script>
 </body>
 </html>

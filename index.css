@@ -1,9 +1,9 @@
-/*ÂÖ²¥*/
+/*æ¸…é™¤é»˜è®¤*/
 div.container-fluid{
     padding-left:0;
     padding-right:0;
 }
-                /*×óÓÒ*/
+                /*è½®æ’­å·¦å³*/
 .container-fluid a.carousel-control-prev,a.carousel-control-next{
     width:2.5rem;
     height:2.5rem;
@@ -18,14 +18,14 @@ div.container-fluid{
     top:50%;
     right:5%;
 }
-                /*ÏÂ±ê*/
+                /*è½®æ’­ä¸‹é€‰é¡¹*/
 .container-fluid .carousel-indicators li{
     width:1.25rem;
     height:1.25rem;
     margin:0 0.625rem;
     border-radius:50%;
 }
-/*¹«Ë¾¼ò½é*/
+/*å…¬å¸ç®€ä»‹å­—ä½“*/
 .font_size{
     background:url(../images/bg_title.png) no-repeat center;
     font-size:3rem;
@@ -34,12 +34,12 @@ div.container-fluid{
 .container-fluid dl.intro{
     text-align: center;
 }
-/*¼ò½éÍ¼Æ¬*/
+/*å…¬å¸ç®€ä»‹ä¸‹çš„img*/
 .container-fluid .row .bg_img{
     background: #f2f2f2;
 }
 
-/*²úÆ·¼ò½é*/
+/*å…¬å¸ç®€ä»‹ä¸‹å­—ä½“*/
 .text_d1{
     font-size:0.875rem;
     color:#b7b7b7;
@@ -70,7 +70,7 @@ div.container-fluid{
     color:#666;
     line-height:2.5em;
 }
-/*²úÆ·±³¾°ÑÕÉ«*/
+/*äº§å“å±•ç¤ºï¼Œç¬¬ä¸€å›¾*/
 .name_product .row:nth-child(2){
     background-image:url(../images/bg_index_pro2.jpg);
 }
@@ -83,8 +83,8 @@ div.container-fluid{
 .name_product_img_width{
     max-width:25rem !important;
 }
-/*Ó¦ÓÃÁìÓò*/
-      /*±³¾°Í¼Æ¬¼°Ðý×ª*/
+/*åº”ç”¨é¢†åŸŸ*/
+      /*èƒŒæ™¯*/
 .container-fluid .img_use{
     background:url(../images/bg_yyly.jpg) no-repeat;
     width:100%;
@@ -97,18 +97,18 @@ div.container-fluid{
 .container-fluid .img_use img:hover{
     transform:rotateY(360deg);
 }
-.container-fluid .container div img{
+.container-fluid>.container>div>img{
     max-width: 100%;
     min-width: 75%;
     flex-wrap: wrap;
 }
-/*ÐÂÎÅ×ÊÑ¶*/
-       /*°´Å¥*/
+/*æ–°é—»èµ„è®¯*/
+
 .news_text{
     color:#999 !important;
 
 }
-       /*¾ßÌåÄÚÈÝ*/
+       /*ç¬¬ä¸€è¡Œ*/
 .news_time_piece{
     width: 4.5rem;
     height:4.5rem;
@@ -136,7 +136,9 @@ div.container-fluid{
 .container .tab-content .border_button_line{
     border-bottom: 1px solid #e5e5e5;
 }
-/*µ×²¿MORE*/
+
+
+/*MORE*/
 .more_a_text_size a{
     padding: 1rem 12rem;
     height:3rem;
@@ -155,15 +157,7 @@ div.container-fluid{
     background:#177abb;
     color:#fff;
 }
-/*ÒýÈëÊ×Î²µ÷Õû*/
-header iframe,footer iframe{
-    width:100%;
-}
-footer iframe{
-    height:20rem;
-}
-@media screen and (max-width:1200px){
-    .container .tab-content #new_news>div,#new_message>div,#new_activity>div{
-        justify-content: center;
-    }
-}
+
+
+
+

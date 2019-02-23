@@ -1,6 +1,10 @@
+.crontaine{
+	height: 7.8125rem;
+}
 .container .row .nav-item div>a{
 	background:none;
 	color:black;
+	width:98px;
 }
 .container .row .nav-item_hover>a:hover{
 	background:#f1f1f1;
@@ -9,7 +13,7 @@
 	width:0;
 	transition:0.6s ease-out;
 }
-/*µ¼º½ÏÂÃæÀ¶Ìõ¶¯»­
+/*åŠ¨ç”»ï¼Œå¯¼èˆªä¸‹é¢åŠ¨æ€è“æ¡
 @keyframes twig{
 	0%{background:#ffffff;width:0%;}
 	50%{background:#47aff3;width:50%;}
@@ -47,26 +51,22 @@
 	background:rgba(228,233,237,0.6);
 }
 
-
-
-
-/* logoÖĞÆÁÒÔÏÂµ÷Õû*/
-@media screen and (max-width:992px) and (min-width:576px ){
-	.container .row div:first-child img{
-		max-width:50%;
-		margin:0 auto !important;
+/* logo*/
+@media screen and (max-width:992px) and (min-width:576px){
+	.container{
+		height: 11rem;
 	}
 }
-@media screen and (max-width: 575px){
-	.container .row div:first-child img{
-		max-width:50%;
-		margin:0 auto !important;
+
+@media screen and (max-width:992px) and (min-width:576px){
+	.container .navbar-light{
+		width:12.5rem;
+		border:1px solid red;
 	}
 }
+
 @media screen and (max-width: 575px){
 	.container .row div:nth-child(2){
 		display:none;
 	}
 }
-
-
